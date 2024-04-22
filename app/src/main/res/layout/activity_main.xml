@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CRUD INGRESO DE DATOS"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+
+       />
+    <EditText
+        android:id="@+id/cajaName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su nombre"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"
+
+        />
+    <EditText
+        android:id="@+id/cajaContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el contacto"
+        android:textSize="24dp"
+        android:layout_below="@+id/cajaName"
+        android:inputType="number"
+
+        />
+    <EditText
+        android:id="@+id/cajaDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="fecha de nacimiento"
+        android:textSize="24dp"
+        android:layout_below="@+id/cajaContact"
+        android:inputType="number"
+
+        />
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Insertar nuevo registro"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/cajaDob"
+
+        />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Actualizar registro"
+        android:layout_below="@+id/btnInsert"
+
+        />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Eliminar un registro existente"
+        android:layout_below="@+id/btnUpdate"
+
+        />
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Mostrar registros"
+
+        android:layout_below="@+id/btnDelete"
+
+        />
+
+</LinearLayout>
